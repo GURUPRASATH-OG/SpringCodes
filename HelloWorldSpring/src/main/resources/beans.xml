@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- Define beans -->
+    <bean id="game" class="com.gamelibrary.Pacman"/>
+    <bean id="subwaySurfers" class="com.gamelibrary.SubwaySurfers" />
+
+    <!-- Inject Pacman into GameRunner -->
+<!--    <bean id="Xbox" class="com.gamerunner.GamingConsole">-->
+<!--        <constructor-arg ref="pacman"/>-->
+<!--    </bean>-->
+
+    <bean id="games" class="com.gamerunner.GamingConsole" autowire="byName">
+    </bean>
+
+
+</beans>
