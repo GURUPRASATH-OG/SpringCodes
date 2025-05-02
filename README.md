@@ -86,18 +86,18 @@ A secure backend login/register system with:
 
 ### 📌Description
 A Secure BlogPost System which user can manage blog post Built Using Best Standards.
--Exposed RESTFUL API, Controller, Global error Handler, Dtos, Mappers.
--Utitlizied Lombok and mapstruct libraries.
--Role based access (USER,ADMIN)
--Spring Security and JWT Auth RBAC
--Api versioning.
+- Exposed RESTFUL API, Controller, Global error Handler, Dtos, Mappers.
+- Utitlizied Lombok and mapstruct libraries.
+- Role based access (USER,ADMIN)
+- Spring Security and JWT Auth RBAC
+- Api versioning.
 
 ### 👪 RelationShip Between Entites
---Entity
--Post 
--Tag
--Categories
---Relationship 
+-- Entity
+- Post 
+- Tag
+- Categories
+-- Relationship 
 ✅Post 👉 Tag @ManyToMany
 ✅Post 👉 Categories @ManyToOne One categories can have  many post associated with it
 ❌Categories and Tags cannot be deleted if Post associated with it.
