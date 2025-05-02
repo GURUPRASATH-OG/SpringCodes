@@ -4,7 +4,7 @@ This repository contains two Java Spring Boot backend projects:
 
 1. **🗓 Task Tracker API** - A RESTful API to manage tasks.
 2. **🔐 JWT Role-Based Authentication API** - Secure user login system with JWT and role-based access control.
-
+3. **🗨️Blog Post Platform API** - RESTful API to create, edit maintain blogs Posts.
 ---
 
 ## 🗂 Project 1: Task Tracker API (Spring Boot)
@@ -79,6 +79,49 @@ A secure backend login/register system with:
 ### 🔐 Roles
 - `ROLE_USER` – can access his content
 - `ROLE_ADMIN` – can access admin specfic content
+
+---
+##📄 Project 3: Blog PlatForm Rest Api (Role Based Access Using JWT)
+###📝Blog Platform
+
+###📌Description
+A Secure BlogPost System which user can manage blog post Built Using Best Standards.
+-Exposed RESTFUL API, Controller, Global error Handler, Dtos, Mappers.
+-Utitlizied Lombok and mapstruct libraries.
+-Role based access (USER,ADMIN)
+-Spring Security and JWT Auth RBAC
+-Api versioning.
+
+###👪 RelationShip Between Entites
+--Entity
+-Post 
+-Tag
+-Categories
+--Relationship 
+✅Post 👉 Tag @ManyToMany
+✅Post 👉 Categories @ManyToOne One categories can have  many post associated with it
+❌Categories and Tags cannot be deleted if Post associated with it.
+
+###🖌️Diagrams
+![Blog App Diagrams](/pics/Blog%20Platform.png)
+
+
+###📦️API Endpoints
+| Method | Endpoint | Description|
+| POST  | `api/v1/auth/login` | Authenticate and receive JWT Token|
+| POST   |`api/v1/categories/`|Create new Category  |
+| GET   | `api/v1/categories`  |Get All Categories  |
+| DELETE|`api/v1/categories/{id}`|Delete Existing Category  |
+| POST   |`api/v1/tags`  |Create New Tags  |
+| GET   |`api/v1/tags`  |Get List of Tags  |
+| DELETE  | `api/v1/tag/{tagId}`  | Delete Existing Tag   |
+| POST   | `api/v1/posts`    | Create New Post   |
+| GET   |`api/v1/posts`  | Get all Published Posts   |
+| GET   |`api/v1/posts/drafts`    | Get all Draft Posts   |
+| GET   | `api/v1/posts/{id}`     | Get Post By id     |
+|  PUT  | `api/v1/posts/{id}`     | Update Existing Post   |
+|  DELETE    | `api/v1/posts/{id}`     | Delete Existing Post   |
+
 
 ---
 
