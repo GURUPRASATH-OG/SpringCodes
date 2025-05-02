@@ -31,7 +31,7 @@ there by forming @OneToMany with Task and Task have ManyToOne RelationShip with 
 
 
 ###Diagrams
-![System Diagrams](pics/Spring Boot Task Tracker App.png)
+![System Diagrams](pics/Spring%20Boot%20Task%20Tracker%20App.png)
 ### 🔁 Endpoints
 
 | Method | Endpoint         | Description         |
