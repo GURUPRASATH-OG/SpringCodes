@@ -25,12 +25,12 @@ A simple CRUD-based RESTful web service for managing tasks. Built using Spring B
 - H2 / MySQL
 - Lombok
 - 
-###RelationShip
+### 👪 RelationShip
 We have 2 entity one is tasklist and the other one is tasks so. One task list can have many task associated with it
 there by forming @OneToMany with Task and Task have ManyToOne RelationShip with TaskList
 
 
-###Diagrams
+### 🖌️Diagrams
 ![System Diagrams](pics/Spring%20Boot%20Task%20Tracker%20App.png)
 ### 🔁 Endpoints
 
