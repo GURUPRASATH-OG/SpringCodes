@@ -108,6 +108,7 @@ A Secure BlogPost System which user can manage blog post Built Using Best Standa
 
 ###📦️API Endpoints
 | Method | Endpoint | Description|
+|-------|------------------|-------|
 | POST  | `api/v1/auth/login` | Authenticate and receive JWT Token|
 | POST   |`api/v1/categories/`|Create new Category  |
 | GET   | `api/v1/categories`  |Get All Categories  |
