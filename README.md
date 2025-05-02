@@ -1,4 +1,4 @@
-# 🚀 Spring Boot Backend Projects
+ # 🚀 Spring Boot Backend Projects
 
 This repository contains two Java Spring Boot backend projects:
 
@@ -81,10 +81,10 @@ A secure backend login/register system with:
 - `ROLE_ADMIN` – can access admin specfic content
 
 ---
-##📄 Project 3: Blog PlatForm Rest Api (Role Based Access Using JWT)
-###📝Blog Platform
+### 📄 Project 3: Blog PlatForm Rest Api (Role Based Access Using JWT)
+### 📝Blog Platform
 
-###📌Description
+### 📌Description
 A Secure BlogPost System which user can manage blog post Built Using Best Standards.
 -Exposed RESTFUL API, Controller, Global error Handler, Dtos, Mappers.
 -Utitlizied Lombok and mapstruct libraries.
@@ -92,7 +92,7 @@ A Secure BlogPost System which user can manage blog post Built Using Best Standa
 -Spring Security and JWT Auth RBAC
 -Api versioning.
 
-###👪 RelationShip Between Entites
+### 👪 RelationShip Between Entites
 --Entity
 -Post 
 -Tag
@@ -102,11 +102,11 @@ A Secure BlogPost System which user can manage blog post Built Using Best Standa
 ✅Post 👉 Categories @ManyToOne One categories can have  many post associated with it
 ❌Categories and Tags cannot be deleted if Post associated with it.
 
-###🖌️Diagrams
+### 🖌️Diagrams
 ![Blog App Diagrams](/pics/Blog%20Platform.png)
 
 
-###📦️API Endpoints
+### 📦️API Endpoints
 | Method | Endpoint | Description|
 |-------|------------------|-------|
 | POST  | `api/v1/auth/login` | Authenticate and receive JWT Token|
