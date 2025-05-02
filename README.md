@@ -11,7 +11,7 @@ This repository contains two Java Spring Boot backend projects:
 
 ### 📌 Description
 A simple CRUD-based RESTful web service for managing tasks. Built using Spring Boot following best practices such as:
-- Layered architecture (Controller, Service, Repository)
+- Layered architecture (Controller, Service, Repository,Mappers,Global Exception Handler)
 - DTO usage
 - Entity relationships
 - Rest Apis
@@ -24,21 +24,28 @@ A simple CRUD-based RESTful web service for managing tasks. Built using Spring B
 - Spring Data JPA
 - H2 / MySQL
 - Lombok
+- 
+###RelationShip
+We have 2 entity one is tasklist and the other one is tasks so. One task list can have many task associated with it
+there by forming @OneToMany with Task and Task have ManyToOne RelationShip with TaskList
 
+
+###Diagrams
 ### 🔁 Endpoints
 
 | Method | Endpoint         | Description         |
 |--------|------------------|---------------------|
-| GET    | `/tasks`         | Get all tasks       |
-| GET    | `/tasks/{id}`    | Get task by ID      |
-| POST   | `/tasks/`        | Create a task       |
-| PUT    | `/tasks/{id}`    | Update a task       |
-| DELETE | `/tasks/{id}`    | Delete a task       |
+| GET    | `/task-list/{task_list_id}/task`         | Get all tasks       |
+| GET    | `/task-list/{task_list_id}/task`    | Get task by ID      |
+| POST   | `/task-list/{task_list_id}/task`        | Create a task       |
+| PUT    | `/task-list/{task_list_id}/task`    | Update a task       |
+| DELETE | `/task-list/{task_list_id}/task`    | Delete a task       |
 | GET    | `/task-list/`     | Get all tasklist    |
 | POST   |`/task-list/`      | Create a TaskList   |
-| PUT    |`/task-list/{taskListId}`           | Update Tasklist     |
+| PUT    |`/task-list/{taskListId}` | Update Tasklist     |
+|DELETE |`task-list/{task-list-id}`|Delete task list|
 
-### 🔗 Swagger UI
+### 🔗 Acess Endpoints.
 Access API docs at:  
 `http://localhost:8080/`
 
@@ -66,12 +73,11 @@ A secure backend login/register system with:
 |--------|-----------------|----------------------------|
 | POST   | `/auth/register`| Register a new user        |
 | POST   | `/auth/login`   | Authenticate and get token |
-| GET    | `/admin/data`   | Admin-only endpoint        |
-| GET    | `/user/data`    | User-only endpoint         |
+| GET    | `/api/protext-data`    | User-only endpoint         |
 
 ### 🔐 Roles
-- `ROLE_USER` – can access basic features
-- `ROLE_ADMIN` – can manage users and access all endpoints
+- `ROLE_USER` – can access his content
+- `ROLE_ADMIN` – can access admin specfic content
 
 ---
 
@@ -79,7 +85,7 @@ A secure backend login/register system with:
 
 ```bash
 # Clone repo
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/guruprasath-og/springcodes
 cd your-repo-name
 
 # Build & run
