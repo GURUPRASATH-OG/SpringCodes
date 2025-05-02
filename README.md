@@ -97,7 +97,7 @@ A Secure BlogPost System which user can manage blog post Built Using Best Standa
 - Post 
 - Tag
 - Categories
--- Relationship 
+  ## Relationship 
 ✅Post 👉 Tag @ManyToMany
 ✅Post 👉 Categories @ManyToOne One categories can have  many post associated with it
 ❌Categories and Tags cannot be deleted if Post associated with it.
